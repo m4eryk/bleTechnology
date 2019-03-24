@@ -1,0 +1,348 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Open sans', sans-serif;
+}
+.container{
+    width: 100%;
+    
+    margin: 0 auto;
+    padding: 0;
+}
+ /*#region Headr*/
+.logo{
+    display: flex;
+    margin: 0px auto;
+    max-width: 156px;
+}
+nav{
+    align-items: center;
+}
+nav img{
+    max-width: 157px;
+    max-height: 50px;
+}
+nav ul{
+    
+    list-style: none;
+    padding:  0 0 0 0;
+    margin: 10px;
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #3c3c3c;
+    
+}
+#login{
+    background-color:#2c67b1;
+    color: #ffffff;
+    margin: 0;
+}
+ /*#endregion Headr finished*/
+
+/*#region Home*/
+#home{
+   
+}
+.home{
+    background-image: url('img/about-small-banner.jpg');
+    background-size: cover;
+    height: 600px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center
+
+}
+.home p{
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    text-transform: uppercase;
+    
+    font-size: 16pt;
+    font-weight:bold;
+}
+.home i{
+    margin-bottom: 10px;
+}
+.home .text{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+/*#endregion Home finished*/
+
+/*#region Function*/
+.function{
+    background-color: #faf7f7;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.function .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 330px;
+    margin-top: 20px;
+ 
+
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    
+}
+.function .text{
+    width: 300px;
+}
+.function .card p{
+    padding-left: 10px;
+    margin: 5px 0 10px 5px;
+}
+.function .card i{
+    padding: 5px 0 0 10px;
+}
+/*#endregion Function finished*/
+
+/*#region Download*/
+.download{
+    background-color: #6a68eb;
+    color:#ffffff;
+    height: 300px;;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.download p,h1{
+    padding: 0px;
+    padding-left: 5px;
+    margin: 0px;
+}
+.download i{
+    padding-right: 15px;
+    padding-left: 10px;
+}
+.google-play, .app-store{
+    background-color: #3c3c3c;
+    border-radius: 10px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    align-items: center;
+}
+.download .text{
+    margin-bottom: 15px;
+}
+/*#endregion Download finished*/
+
+/*#region News*/
+
+.news{
+    width: 100%;
+    margin:20px auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+    max-width: 347px; 
+    height: 500px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.news .info{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.news h3{
+    padding: 0 10px;
+    font-size: 12pt;
+}
+.news p{
+    padding: 0 10px;
+    font-size: 8pt;
+}
+
+/*#endregion News finished*/
+
+
+.contact{
+    background-image: url('img/contact.jpg');
+    background-size: cover;
+    height: 500px;
+    color: #ffffff;
+    font-size: 16pt;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contact h1,p{
+    margin: 0;
+}
+.contact .personal-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input{
+    margin: 10px 0;
+    height: 30px;
+    border: 2px solid #3c3c3c;
+    border-radius: 5px;
+}
+textarea{
+    margin: 0;
+    height: 150px;
+    max-height: 150px;
+    width: 200px;
+    max-width: 200px;
+    border: 2px solid #3c3c3c;
+    border-radius: 5px;
+}
+.contact .send{
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    background: none;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-size: 16pt;
+}
+
+/* adaptability */
+    @media screen and (min-width: 768px){
+
+        /*#region Headr*/
+        .home{
+            background-image: url('img/about-banner.jpg');
+        }
+        nav ul{
+            display: flex;
+            
+        }
+        nav li{
+            margin: 15px 0 15px 10px;
+        }
+        
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .logo{
+            margin: 0;
+        }
+        #login {
+            text-transform: uppercase;
+            width: 100px;
+            border-radius: 20px;
+        }
+        /*#endregion Headr finished*/
+        
+        /*#region Home*/
+        .home .text{
+            margin-top: 70px;
+            flex-direction: row;
+            align-items: center;
+            
+            text-align: left;
+        }
+        .home i{
+            margin-right: 10px;
+        }
+        /*#endregion Home finished*/
+
+        /*#region Function*/
+        .function{
+            background-image: url('img/function-baner.png');
+            background-size: cover;
+
+           
+
+            align-items: flex-start;
+        }
+        .function .card{
+            margin-left: 100px;   
+        }
+        /*#endregion Function finiched*/
+
+        /*#region Download*/
+        .download{
+            background-image: url('img/download-baner.jpg');
+            background-size: cover;
+            text-align: right;
+            height: 600px;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .download .text{
+            margin-right: 100px;
+              
+        }
+        .google-play, .app-store{
+            
+            width: 310px;
+            align-items: center;
+            justify-content: center;
+        }
+        .link{
+            margin-top: 70px;
+            margin-right: 100px;
+            display: flex;
+            flex-direction: row;
+        }
+        /*#endregion Download finiched*/
+        
+        /*#region Contact*/
+        .contact .personal-data{
+            margin-top:40px;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        input{
+            margin-right: 10px;
+            width: 200px;
+        }
+        textarea{
+            width: 500px;
+            max-width: 500px;
+        }
+        /*#endregion Contact*/
+    }
+    @media screen and (min-width: 1045px){
+
+        /*#region News*/
+        #news{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 600px;
+            
+        }
+        /*#endregion News finished*/
+    }
+/*adaptability finished*/
+
+
